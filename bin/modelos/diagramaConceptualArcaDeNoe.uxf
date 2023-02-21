@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>20</y>
+      <w>260</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Cartas
+--
+Atributos
+
+Tamaño
+int imagenAPulsar,contador
+Imagen carta,Imagen reverso 
+--
+Metodos
+enviarNumero()
+enviarImagen()
+obtenerImagenAPulsar()
+enviarImagenDeReverso()
+mostrarOcultarImagen()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>0</y>
+      <w>260</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>LogicaArcaNoe
+--
+Atributos
+
+Array Botones
+Array diseñosDeImagenes
+int botonesPulsados(2),cantidadDeBotones,comparacion, identificadores(2),punto,ronda,
+--
+Metodos
+añadirBotones()
+aumentarRonda()
+cartasVisibles()
+contador()
+darImagenes()
+cartasDestapadas()
+obtenerPunto()
+obtenerRonda()
+obtenerFichaAleatoria()
+perderPunto()
+revolverAray()
+verificar()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>440</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PrincipalArcaNoe
+--
+Atributos
+--
+Metodos
+main()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>410</y>
+      <w>470</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>VistaGUI
+--
+Atributos
+array botonesTotales
+JPanel panelCentral, panelRecuento,panelInicial,panelBotones
+JLabel juego, ronda, punto
+JButton salir, inicio
+Escucha escucha
+Cartas boton
+--
+Metodos
+initGUI()
+panelInicial()
+determinar()
+elementosIniciales()
+ventanaEmergente()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>130</y>
+      <w>230</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>320</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>470</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>160.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>100</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0</additional_attributes>
+  </element>
+</diagram>
